@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute sum</title>
+</head>
+
+<body>
+    <script>
+        // Take an array of integers (positive or negative or both) and return the sum of the absolute value of each element.
+        
+        let arr = [];
+        let count = +prompt("enter no. of elements");
+        for (let i = 0; i < count; i++) {
+            arr[i] = +prompt(`enter ${i} element`);
+        }
+        document.write(`[${arr}]`);
+        document.write(`<br>`);
+        document.write(`Absolute sum of all elements = ${absSum(arr)}`);
+
+        function absSum(arr){
+            let total =0;
+            for(let i =0;i<arr.length;i++){
+                total = total + Math.abs(arr[i]);
+            }
+            return total;
+        }
+    </script>
+</body>
+
+</html>

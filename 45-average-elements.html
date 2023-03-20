@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Average of all elements a whole number?</title>
+</head>
+<body>
+    <script>
+        // Create a function that takes an array as an argument and returns true or false depending 
+        // on whether the average of all elements in the array is a whole number or not.
+        
+        let arr = [];
+        let count = +prompt("enter no. of elements");
+        for (let i = 0; i < count; i++) {
+            arr[i] = +prompt(`enter ${i} element`);
+        }
+        document.write(`[${arr}]`);
+        document.write(`<br>`);
+        document.write(`Is Average of all elements a whole number?= ${average(arr)}`);
+
+        function average(arr){
+            let total= 0;
+            for(let i = 0; i< arr.length ; i++){
+                total = total + arr[i];
+            }
+            let avg = total / arr.length;
+            if(Number.isInteger(avg)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

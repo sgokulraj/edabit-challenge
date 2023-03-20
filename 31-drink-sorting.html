@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink sorting</title>
+</head>
+<body>
+    <script>
+        // Create a function that has the drinks array as an argument and return the drinks objects sorted by price in ascending order.
+        // Assume that the following array of drink objects needs to be sorted:
+
+        // drinks = [
+        //     {name: "lemonade", price: 50},
+        //     {name: "lime", price: 10}
+        // ]
+
+        let drinks = [
+            {name: "lemonade", price: 50},
+            {name: "lime", price: 10},
+            {name: "appyFizz",price:100},
+            {name: "Frooty", price:20}
+        ]
+
+        drinks.sort(function(a,b){return a.price - b.price});
+        displayDrinks();
+
+        function displayDrinks(){
+            for(let i =0; i< drinks.length;i++){
+                document.write(drinks[i].name);
+                document.write('\t');
+                document.write(drinks[i].price);
+                document.write('<br>');
+
+
+            }
+        }
+    </script>
+</body>
+</html>

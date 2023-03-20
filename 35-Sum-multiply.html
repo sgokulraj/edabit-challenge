@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum of multiplication</title>
+</head>
+
+<body>
+    <script>
+        // Given a number, return the total sum of that number multiplied by every number between 1 and 10.
+        // Use recursion to solve this challenge.
+
+        let number = +prompt("enter a number");
+        let i = 10;
+        let total = 0;
+        document.write(`${multiSum(number, i)}`);
+
+        //Without recursion
+        // function multiSum(n) {
+        //     let total = 0;
+        //     for (let i = 1; i <= 10; i++) {
+        //         total = total + n * i;
+        //     }
+        //     return total;
+        // }
+
+        //With recursion
+        function multiSum(n, i) {
+            if (i == 1) {
+                return n;
+            } else {
+                return ((n * i) + multiSum(n, i - 1));
+            }
+        }
+    </script>
+</body>
+
+</html>

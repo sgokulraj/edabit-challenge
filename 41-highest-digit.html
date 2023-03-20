@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest digit</title>
+</head>
+<body>
+    <script>
+        // Create a function that takes a number as an argument and returns the highest digit in that number.
+        
+        let number = +prompt("enter a number");
+        document.write(`The highest digit in ${number} = ${highDigit(number)}`);
+
+        function highDigit(number){
+            let rem;
+            let digit =0;
+            while(number != 0){
+                rem = number % 10;
+                if(rem > digit){
+                    digit = rem;
+                }
+                number = Math.floor(number/10);
+            }
+            return digit;
+        }
+    </script>
+</body>
+</html>

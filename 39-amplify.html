@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplify the multiples of four</title>
+</head>
+
+<body>
+    <script>
+        //    In this challenge, you must generate a sequence of consecutive numbers, from a lower bound that will always be equal to 1,
+        //     up to a variable given higher bound (including the bounds in the sequence).
+        // Each number of the sequence that can be exactly divided by 4 must be amplified by 10 (see notes below).
+        // Given a higher bound num, implement a function that returns an array with the sequence of numbers, after that every multiple of 4 has been amplified.
+
+        let number = +prompt("enter a number");
+        document.write(amplify(number));
+
+        function amplify(n) {
+            let arr = [];
+            for (let i = 1; i <= n; i++) {
+                if (i % 4 == 0) {
+                    arr.push(i * 10);
+                } else {
+                    arr.push(i);
+                }
+            }
+            return arr;
+        }
+    </script>
+</body>
+
+</html>

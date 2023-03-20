@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number split</title>
+</head>
+
+<body>
+    <script>
+        // Given a number, return an array containing the two halves of the number. If the number is odd, make the rightmost number higher.
+        // numberSplit(4) ➞ [2, 2]
+        // numberSplit(10) ➞ [5, 5]
+        // numberSplit(11) ➞ [5, 6]
+        // numberSplit(-9) ➞ [-5, -4]
+        
+        let number = +prompt("enter a number");
+       console.log(numberSplit(number));
+
+        function numberSplit(n) {
+            let arr = [];
+            let i = 1;
+            if (n % 2 == 0) {
+                while (i <= 2) {
+                    arr.push(n / 2);
+                    i++;
+                }
+            }else{
+                arr.push(Math.floor(n/2));
+                arr.push(Math.ceil(n/2));
+            }
+            return arr;
+        }
+    </script>
+</body>
+
+</html>

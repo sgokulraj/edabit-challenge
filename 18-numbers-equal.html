@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are the numbers equal?</title>
+</head>
+
+<body>
+    <script>
+        // Create a function that returns true when num1 is equal to num2; otherwise return false
+        let num1 = +prompt("enter first number");
+        let num2 = +prompt("enter second number");
+        document.write(`Are the numbers equal? ${equal(num1, num2)}`);
+
+        function equal(n1, n2) {
+            if (n1 == n2) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

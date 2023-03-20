@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first element in array</title>
+</head>
+
+<body>
+    <script>
+        // Create a function that takes an array containing only numbers and return the first element.
+        
+        let arr = [];
+        let count = +prompt("enter no. of elements");
+        for (let i = 0; i <= count; i++) {
+            // arr.push(+prompt(`enter ${i} element`));
+            arr[i] = +prompt(`enter ${i} element`);
+        }
+        document.write(`first element in the array=${array(arr)}`);
+        //Method-1
+        // for (let i = 0; i <= count; i++) {
+        //     document.write(arr[i]);
+        //     document.write('\t');
+
+        // }
+
+        //Method-2
+        function array(arr){
+            return arr[0];
+        }
+
+    </script>
+</body>
+
+</html>

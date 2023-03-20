@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Less than 100?</title>
+</head>
+
+<body>
+    <!-- Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false. -->
+    <script>
+        let num1 = +prompt("enter first number");
+        let num2 = +prompt("enter second number");
+        document.write(`Sum of two numbers is less than 100? ${add(num1,num2)}`);
+
+        function add(n1,n2) {
+            let result = n1+n2;
+            if (result < 100){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball pointers</title>
+</head>
+
+<body>
+    <script>
+        // You are counting points for a basketball game, given the amount of 2 - pointers scored and 
+        // 3 - pointers scored, find the final points for the team and return that value.
+
+        let twoPoint = +prompt("enter no. of 2-pointers");
+        let threePoint = +prompt("enter no. of 3-pointers");
+        document.write(`Total points=${totalPoints(twoPoint, threePoint)}`);
+
+        function totalPoints(twoPoint,threePoint){
+            return (2*twoPoint + 3*threePoint);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of a triangle</title>
+</head>
+<body>
+    <script>
+        // Write a function that takes the base and height of a triangle and return its area.
+        
+        let base=+prompt("enter base of a traingle");
+        let height=+prompt("enter height of a triangle");
+        document.write(`Area = ${area(base,height)}`);
+
+        function area(b,h){
+            let area = (base * height)/2;
+            return area;
+        }
+    </script>
+</body>
+</html>

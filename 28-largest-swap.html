@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Swap</title>
+</head>
+
+<body>
+    <script>
+        // Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+        // To illustrate:
+        // If 27 is our input, we should return false because swapping the digits gives us 72, and 72 > 27.
+        // On the other hand, swapping 43 gives us 34, and 43 > 34.
+
+        
+        let number = prompt("enter a two digit number");
+        swap(number);
+
+        function swap(number) {
+            let arr = number.split('');
+            if (arr.length != 2) {
+                document.write("enter only two digit number");
+            }
+            else {
+                let reverseNo = '';
+                for (let i = 1; i >= 0; i--) {
+                    reverseNo = reverseNo + arr[i];
+                }
+                if ((+number) >= (+reverseNo)) {
+                    document.write("entered number is greater than the number obtained by swapping its digits");
+                } else {
+                    document.write("entered number isn't greater than the number obtained by swapping its digits");
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

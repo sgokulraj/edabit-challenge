@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding up the numbers</title>
+</head>
+<body>
+    <script>
+        // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
+        //  For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+        let num = +prompt("enter a number");
+        document.write(`adding up of ${num}=${addUp(num)}`);
+
+        function addUp(n) {
+            let result = 0;
+            for(let i = 1 ; i<=n;i++){
+                result += i;
+            }
+            return result;
+        }
+    </script>
+</body>
+</html>

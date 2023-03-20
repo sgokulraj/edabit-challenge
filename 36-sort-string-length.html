@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort by string length</title>
+</head>
+
+<body>
+    <script>
+        // Create a function that returns an array of strings sorted by length in ascending order.
+        let arr = [];
+        let count = +prompt("enter no. of elements");
+        for (let i = 0; i < count; i++) {
+            arr[i] = prompt(`enter ${i} element`);
+        }
+        arr.sort(function (a, b) { return a.length - b.length });
+        displaysorted();
+
+        function displaysorted() {
+            for (let i = 0; i < arr.length; i++) {
+                console.log(arr[i]);
+                // document.write('\t');
+                // document.write('<br>');
+
+            }
+        }
+    </script>
+</body>
+
+</html>

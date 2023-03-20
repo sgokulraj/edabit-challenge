@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of Squares</title>
+</head>
+
+<body>
+    <script>
+        // Create a function that calculates the number of different squares in an n * n square grid. 
+        // If n = 0 then the number of squares is 0
+        // If n = 1 then the number of squares is 1 + 0 = 1
+        // If n = 2 then the number of squares is 2^2 + 1 = 4 + 1 = 5
+        // If n = 3 then the number of squares is 3^2 + 5 = 9 + 5 = 14
+        // As you can see, for each value of n the number of squares is n squared + the number of squares from the previous value of n.
+
+        
+        let number = +prompt("enter a number");
+        let n2 = squared(number);
+        document.write(`no. of squares ${n2}`);
+
+        //Method-1
+        // function squared(number) {
+        //     let result = 0;
+        //     for (let i = 1; i <= number; i++) {
+        //         result = result + (i ** 2);
+        //     }
+        //     return result;
+        // }
+
+        //Method-2
+        function squared(number) {
+            if (number ==  0) {
+                return 0;
+            }else{
+                return (number ** 2 + (squared(number - 1)));
+            }
+        }
+    </script>
+</body>
+
+</html>

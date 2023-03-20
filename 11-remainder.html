@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder of two numbers</title>
+</head>
+
+<body>
+    <script>
+        // Two numbers are passed as parameters.The first parameter divided by
+        //  the second parameter will have a remainder, possibly zero.Return that value.
+        
+        let num1 = +prompt("enter first number");
+        let num2 = +prompt("enter second number");
+        document.write(`remainder of ${num1} and ${num2} = ${remainder(num1, num2)}`);
+        function remainder(n1, n2) {
+            return n1 % n2;
+        }
+    </script>
+</body>
+
+</html>

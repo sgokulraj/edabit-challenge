@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it true?</title>
+</head>
+<body>
+    <script>
+        // In this challenge you will be given a relation between two numbers, written as a string. 
+        // Write a function that determines if the relation is true or false.
+        let str = prompt("enter a string expression")
+        document.write(`the expression ${str} evaluates to ${isTrue(str)}`);
+
+        function isTrue(str){
+            return eval(str);
+        }
+    </script>
+</body>
+</html>

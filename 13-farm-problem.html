@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Problem</title>
+</head>
+
+<body>
+    <script>
+        // In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals.
+        // The farmer breeds three species:
+        // chickens = 2 legs
+        // cows = 4 legs
+        // pigs = 4 legs
+        // The farmer has counted his animals and he gives you a subtotal for each species.
+        // You have to implement a function that returns the total number of legs of all the animals.
+
+        let chicken = +prompt("enter no. of chickens");
+        let cows = +prompt("enter no. of cows");
+        let pigs = +prompt("enter no. of pigs");
+
+        document.write(`Total legs=${legs(chicken,cows,pigs)}`);
+        function legs(chicken,cows,pigs){
+            return chicken*2 + cows*4 +pigs*4
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football points</title>
+</head>
+<body>
+    <!-- Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.
+
+    wins get 3 points
+    draws get 1 point
+    losses get 0 points -->
+    <script>
+        let wins = +prompt("enter total no. of wins");
+        let draws = +prompt("enter total no. of draws");
+        let loss = +prompt("enter total no. of loss");
+        document.write(`Total points of the football team = ${football(wins,draws,loss)}`);
+
+        function football(wins,draws,loss){
+            return wins*3 + draws*1;
+        }
+    </script>
+</body>
+</html>

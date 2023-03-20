@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimeter of rectangle</title>
+</head>
+<body>
+    <script>
+        // Create a function that takes length and width and finds the perimeter of a rectangle.
+        
+        let length = +prompt("enter length of rectangle");
+        let width = +prompt("enter width of rectangle");
+        document.write(`Perimeter of rectangle= ${perimeter(length,width)}`);
+
+        function perimeter(l,w){
+            return (2*(l+w));
+        }
+
+    </script>
+</body>
+</html>

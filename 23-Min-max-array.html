@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest and largest number in array</title>
+</head>
+
+<body>
+    <script>
+        // Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+        let arr = [];
+        let count = +prompt("enter no. of elements");
+        for (let i = 0; i < count; i++) {
+            arr[i] = +prompt(`enter ${i} element`);
+        }
+        document.write(`[${arr}]`);
+        document.write(`<br>`);
+
+
+        //Method-1
+        //Finding Highest number
+        let max = -Infinity;
+        let len = arr.length;
+        document.write(`Highest number=${maxNum(arr)}`);
+    
+
+        function maxNum(arr) {
+            let i = 0
+            while (i < len) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+                i++;
+            }
+            return max;
+        }
+
+        //Finding Lowest number
+        let min = Infinity;
+        let len1 = arr.length;
+        document.write(`<br>`);
+        document.write(`Lowest number=${minNum(arr)}`);
+       
+
+        function minNum(arr) {
+            let i = 0
+            while (i < len) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+                i++;
+            }
+            return min;
+        }
+
+    </script>
+</body>
+
+</html>

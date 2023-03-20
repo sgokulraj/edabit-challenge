@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Polygon angles</title>
+</head>
+
+<body>
+    <script>
+        // Given an n-sided regular polygon n, return the total sum of internal angles (in degrees).
+
+        let num = +prompt("enter no. of side in a polygon(it should be greater than 2)");
+        if (num <= 2) {
+            document.write("number should be greater than 2");
+        } else {
+            document.write(`Total internal angles of ${num} sided Polygon =${polygonAngle(num)}`);
+        }
+
+        function polygonAngle(n) {
+            return (n - 2) * 180;
+        }
+
+    </script>
+</body>
+
+</html>
